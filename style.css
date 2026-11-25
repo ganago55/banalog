@@ -239,6 +239,7 @@ border:2px solid dodgerblue;
 #indexInner table{
 	width:100%;
 	table-layout:fixed;
+	font-size:10px;
 }
 
 #indexInner table img{
