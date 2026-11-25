@@ -220,9 +220,10 @@ border:2px solid hotpink;
 border:2px solid dodgerblue;
 }
 
-@media (max-width: 480px){
+@media screen and (max-width: 480px){
 	#indexInner{
 		margin:12px auto;
+		width: 90%;
 	}
 
 	#menu dl{
