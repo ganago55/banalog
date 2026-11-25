@@ -222,7 +222,7 @@ border:2px solid dodgerblue;
 
 @media screen and (max-width: 480px){
 	#indexInner{
-		margin:12px auto;
+		margin:20px auto;
 		width: 90%;
 	}
 
@@ -234,4 +234,15 @@ border:2px solid dodgerblue;
 		margin-left:0;
 		padding:8px 5px;
 	}
+}
+
+#indexInner table{
+	width:100%;
+	table-layout:fixed;
+}
+
+#indexInner table img{
+	display:block;
+	max-width:100%;
+	height:auto;
 }
