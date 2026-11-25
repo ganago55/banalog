@@ -31,7 +31,9 @@ span{
 }
 
 #container{
-	width:800px;
+	width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
 	height:1000px;
 	margin:0 auto;
 	padding:0px;
@@ -46,7 +48,9 @@ span{
 
 #indexInner{
 	margin:20px auto;
-	width:600px;
+	width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
 	padding:5px;
 	position:relative;
 }
