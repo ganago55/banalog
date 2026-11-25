@@ -12,6 +12,10 @@
 	font-family:Verdana, Arial, sans-serif;
 }
 
+body{
+	margin:0;
+}
+
 img{
 	border:none;
 }
@@ -52,6 +56,13 @@ span{
     box-sizing: border-box;
 	padding:5px;
 	position:relative;
+}
+
+#menu,
+#menu dl{
+	width:100%;
+	min-width:0;
+	box-sizing:border-box;
 }
 
 div.tooltip{
@@ -207,4 +218,19 @@ border:2px solid hotpink;
 
 #carouselInner li.o img{
 border:2px solid dodgerblue;
+}
+
+@media (max-width: 480px){
+	#indexInner{
+		margin:12px auto;
+	}
+
+	#menu dl{
+		padding-left:0;
+	}
+
+	#menu dd{
+		margin-left:0;
+		padding:8px 5px;
+	}
 }
