@@ -1,0 +1,325 @@
+﻿@charset "utf-8";
+
+
+/*全端末（PC・タブレット・スマホ）共通設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #191718;	/*全体の文字色*/
+	font-family: Palatino Linotype, Times New Roman, sans-serif;	/*フォント種類*/
+	font-size: 12pt;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #fcfcfc;
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
+ul {list-style-type: none;}
+ol {padding-left: 40px;padding-bottom: 15px;}
+img {border: none; max-width:100%; height:auto; vertical-align: middle;}
+iframe {width: 100%;}
+
+/*リンク（全般）設定
+---------------------------------------------------------------------------*/
+a {
+	color: #f3d849;	/*リンクテキストの色*/
+	text-decoration: none;
+}
+a:hover {
+	color: #f3d849;			/*マウスオン時の文字色*/
+	text-decoration: underline;	/*マウスオン時に下線*/
+}
+
+/*topimg
+----------------------------------------------------------------*/
+.top {
+	clear:both;
+		max-width: 755px;	/*サイトの最大幅*/
+		margin: 0 auto;
+		padding: 1px 10px 30px 10px;		/*上下、左右へのボックス内の余白*/
+		text-align:center;
+}
+
+#topimg_b{
+min-width:400px;
+}
+
+#profile{
+	width:auto;
+	max-width: 755px;
+	margin:10px 15px;
+}
+
+#settei{
+	margin:20px 0;
+	padding: 15px;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 0.9em;
+	line-height: 165%;
+	letter-spacing: 3px;
+	text-align:left;
+
+}
+
+#zenshin_b{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	max-width: 1000px;
+}
+
+
+/*inner共通
+---------------------------------------------------------------------------*/
+.inner {
+clear:both;
+	max-width: 755px;	/*サイトの最大幅*/
+	margin: 0 auto 30px;
+	padding: 1px 10px 30px 10px;		/*上下、左右へのボックス内の余白*/
+	background: #0A62D0;	/*背景色*/
+	text-align:center;
+	border-radius: 30px;
+}
+
+.text{
+	display:inline-block;
+}
+
+/*main
+---------------------------------------------------------------------------*/
+/*参考セリフ*/
+#serifu {
+	margin: 0px;
+	padding-top: 0px;
+	font-size: 1.2em;
+	font-weight: normal;
+	letter-spacing: 15px;
+	text-align: center;
+	line-height: 40px;
+
+}
+
+/*メニューバー*/
+#menu {
+	width:480px;
+	letter-spacing: 2px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 25px;
+	margin-left: auto;
+	padding-left: 8px;
+}
+
+/*顔アップ画像をPCで非表示*/
+#zoomimg{
+	display:none
+}
+
+.t {
+	width: 40%;
+	min-width: 200px;
+	font-size: 1.2em;
+	color: #e9e9e9;
+	letter-spacing: 0.2em;
+	text-align: center;
+	line-height: 40px;
+	border: 3px #f3d849;
+	border-style: dotted none;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-left: auto;
+}
+
+.td {
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 40px;
+	margin-left: auto;
+	width: 80%;
+	padding: 10px;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 0.9em;
+	color: #fcfcfc;
+	line-height: 165%;
+	letter-spacing: 3px;
+	text-align:left;
+}
+
+/*テーブル要素
+----------------------------------------------*/
+#lb {
+	width:100%;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 0.9em;
+	width:100%;
+ 	border-collapse: separate;
+ 	border: none;
+ 	border-spacing: 5px 5px;
+}
+
+#lb th{
+	width:32%;
+	background-color:#0A62D0;	/*th背景色*/
+	color: #fcfcfc;
+	font-weight:normal;
+	padding:8px;
+ 	text-align:left;
+}
+#lb td{
+	background-color:#e0e5e9;	/*td背景色*/
+	color: #191718;
+	padding:8px;
+}
+/*---------------------------------------------*/
+
+/*メニュー*/
+.m_button{
+	list-style: none;
+	overflow: hidden;
+}
+.m_button li{
+	width: 114px;
+	text-align: center;
+	background-color: #fff;
+	float: left;
+	height: 55px;
+	line-height: 55px;
+	margin-right: 5px;
+	outline: 2px solid #e04040;
+	outline-offset:-8px;
+}
+.m_button li:hover{
+	background-color: #e04040;
+	color: #fff;
+}
+
+/*補足画像サイズ*/
+.hosoku {
+	height:65px;
+	width:auto;
+	display:inline-block;	/*横並びさせる*/
+}
+
+/*連絡先中央寄せ*/
+#mail,#pass {
+	text-align:center;
+}
+
+.footer {
+	margin-top: 15px;
+	font-family: sans-serif;
+	font-size: 0.5em;
+}
+
+/*裏ページの位置*/
+#under {
+	margin-top:200vh;
+	padding:10px 0 20px 0;
+}
+
+#at {
+	color:#EB3780;	/*attention文字色*/
+}
+
+input[type=button] {
+   /* input要素のうちtype属性値がbuttonのものに対して装飾 */
+  	color:#fff;				/*ボタン文字色*/
+	background-color:#8B1954;	/*ボタン背景色*/
+ 	border: 1px solid #A170C2; /* 枠線 */
+}
+
+textarea,input {
+  border: 2px solid #2C121F;
+	margin: 1px;
+	padding: 1px;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 10px;
+	line-height: 165%;
+
+}
+
+
+/*画面幅800px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*画面幅480px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:480px){
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body {
+	font-size: 1.0em;	/*文字サイズ*/
+	line-height: 1.5;	/*行間*/
+}
+
+.top{
+	display:block;
+	margin: 0 auto;
+}
+
+.inner {
+	width: 90%;
+}
+
+img {
+	display: block;
+	width: 100%;	/*画像を横幅いっぱいに表示*/
+	height: auto;
+}
+
+/*メニュー(PCのみ)*/
+#menu {
+	display: none;
+}
+
+/*顔アップ画像（スマホのみ）*/
+#zoomimg {
+	display:block;
+	width:100%;
+	height:auto;
+}
+
+.t{
+	width:80%;
+}
+
+.td{
+	width:90%;
+	padding:15px 0;
+	margin:20px auto;
+}
+
+#lb{
+	width:auto;
+	margin:auto;
+}
+#lb table{
+	width:95%;
+	font-size:0.9em;
+	margin:auto;
+}
+
+#topimg_b{
+	min-width: 50px;
+}
+
+#profile{
+	width:95%;
+	max-width:none;
+	margin: 10px auto;
+}
+
+.smallimg {
+	height:100px;
+	width:auto;
+	display:block;
+	margin:0 auto;
+}
+
+
+}

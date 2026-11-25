@@ -1,0 +1,207 @@
+﻿/*
+===================================================================
+	CSS style.css
+===================================================================
+*/
+
+*{
+/*	margin:0;
+	padding:0;
+	*/
+	font-size:13px;
+	font-family:Verdana, Arial, sans-serif;
+}
+
+img{
+	border:none;
+}
+/*
+body{
+	background-image:url("");
+}
+*/
+a{
+	color:black;
+	text-decoration:none;
+}
+
+span{
+	color:#dd0000;
+	font-weight:bold;
+}
+
+#container{
+	width:800px;
+	height:1000px;
+	margin:0 auto;
+	padding:0px;
+	background:white;
+}
+
+/*
+===================================================================
+	index
+===================================================================
+*/
+
+#indexInner{
+	margin:20px auto;
+	width:600px;
+	padding:5px;
+	position:relative;
+}
+
+div.tooltip{
+	width:230px;
+	position:absolute;
+}
+div.tooltip img{
+	vertical-align:top;
+}
+
+dl dt {
+	border-left:5px solid #FFA8A8;
+	border-bottom:1px solid #FFA8A8;
+	font-size:large;
+	font-weight:bold;
+	margin:0;
+	padding:5px;
+	height:25px;
+}
+
+dl dt a{
+	font-size:large;
+	font-weight:bold;
+}
+
+dl dd{
+	font-size:small;
+	margin:0;
+	padding:10px;
+}
+
+#banner{
+	cursor:text;
+}
+
+#shinobi{
+	margin:250px 0 0 0;
+}
+
+
+/*
+===================================================================
+	link
+===================================================================
+*/
+
+#bookmark {
+	margin:0px auto;
+	width:630px;
+	padding:5px;
+	position:relative;
+}
+
+
+/*
+===================================================================
+	carousel
+===================================================================
+*/
+
+#caption {
+	margin:0px;
+	padding:15px;
+	text-align:center;
+}
+
+#caption input{
+border:1px solid #cccccc;
+}
+
+#carouselWrap{
+	margin:0px auto;
+	width:460px;
+	height:130px;
+	padding:5px;
+	position:relative;
+}
+
+#old{
+	position:absolute;
+	top:30px;
+	left:-8px;
+}
+#new{
+	position:absolute;
+	top:30px;
+	right:-8px;
+}
+
+#pointa{
+	width:80%;
+	margin:0px auto;
+}
+#pointaInner{
+	width:100%;
+	padding:0px 15px 0px 15px;
+}
+#pointaInner p{
+	color:#aaaaaa;
+	float:left;
+	margin-right:10px;
+	display:inline;
+}
+
+#colorcode{
+	padding:0px 0px 10px 0px;
+	text-align:center;
+}
+
+#carouselPrev{
+	position:absolute;
+	top:65px;
+	left:-8px;
+	cursor:pointer;
+}
+#carouselNext{
+	position:absolute;
+	top:65px;
+	right:-8px;
+	cursor:pointer;
+}
+#carousel{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+#carouselInner ul.column{
+	width:445px;
+	height:105px;
+	padding:15px 0 15px 15px;
+	list-style-type:none;
+	float:left;
+}
+#carouselInner ul.column li{
+	float:left;
+	margin-right:4px;
+	display:inline;
+}
+
+#main{
+	padding:60px 0px 20px 0px;
+	text-align:center;
+}
+
+#carouselInner li.d img{
+border:2px solid yellow;
+}
+
+#carouselInner li.p img{
+border:2px solid hotpink;
+}
+
+#carouselInner li.o img{
+border:2px solid dodgerblue;
+}
