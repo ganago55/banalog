@@ -1,0 +1,240 @@
+﻿@charset "utf-8";
+
+
+/*全端末（PC・タブレット・スマホ）共通設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #fff;	/*全体の文字色*/
+	font-family: Palatino Linotype, Times New Roman, sans-serif;	/*フォント種類*/
+	font-size: 10pt;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #483962;	/*背景色*/
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
+ul {list-style-type: none;}
+ol {padding-left: 40px;padding-bottom: 15px;}
+img {border: none; max-width:100%; height:auto; vertical-align: middle;}
+iframe {width: 100%;}
+
+/*リンク（全般）設定
+---------------------------------------------------------------------------*/
+a {
+	color: #A170C2;	/*リンクテキストの色*/
+	text-decoration: none;
+}
+a:hover {
+	color: #A170C2;			/*マウスオン時の文字色*/
+	text-decoration: underline;	/*マウスオン時に下線*/
+}
+
+/*inner共通
+---------------------------------------------------------------------------*/
+.inner {
+	max-width: 755px;	/*サイトの最大幅*/
+	margin: 0 auto 30px;
+	padding: 0 0;		/*上下、左右へのボックス内の余白*/
+	background: #440E2E;	/*背景色*/
+	text-align:center;
+}
+
+.text{
+	display:inline-block;
+}
+
+/*main
+---------------------------------------------------------------------------*/
+/*参考セリフ*/
+#serifu {
+	margin: 0px;
+	padding-top: 58px;
+	font-size: 1.2em;
+	font-weight: normal;
+	letter-spacing: 15px;
+	text-align: center;
+	line-height: 40px;
+
+}
+
+/*拡大画像へのリンク(PCのみ)*/
+#pcimg {
+	font-size: 0.7em;
+	letter-spacing: 2px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+}
+
+/*顔アップ画像をPCで非表示*/
+#zoomimg{
+	display:none
+}
+
+.t {
+	width: 50%;
+	font-size: 1.0em;
+	letter-spacing: 10px;
+	text-align: center;
+	line-height: 30px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #A170C2;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+
+.td {
+	margin: auto;
+	width: 80%;
+	padding: 15px;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 0.9em;
+	line-height: 165%;
+	letter-spacing: 3px;
+	text-align:left;
+}
+
+/*テーブル要素
+----------------------------------------------*/
+#lb {
+	width:380px;
+}
+
+#lb table{
+	width:100%;
+	color:#fff;					/*文字色*/
+ 	border-collapse: separate; 
+ 	border: none;
+ 	border-spacing: 2px 5px;
+}
+
+#lb th{
+	width:40%;
+	background-color:#8B1954;	/*th背景色*/
+	font-weight:normal;
+	padding:10px;
+ 	text-align:left;	
+}
+#lb td{
+	background-color:#EB3780;	/*td背景色*/
+	padding:10px;
+}
+/*---------------------------------------------*/
+
+/*補足画像サイズ*/
+.hosoku {
+	height:65px;
+	width:auto;
+	display:inline-block;	/*横並びさせる*/
+}
+
+/*連絡先中央寄せ*/
+#mail,#pass {
+	text-align:center;
+}
+
+.footer {
+	font-family: sans-serif;
+	font-size: 0.5em;
+}
+
+/*裏ページの位置*/
+#under {
+	margin-top:200vh;
+	padding:10px 0 20px 0;
+}
+
+#at {
+	color:#EB3780;	/*attention文字色*/
+}
+
+input[type=button] {
+   /* input要素のうちtype属性値がbuttonのものに対して装飾 */
+  	color:#fff;				/*ボタン文字色*/
+	background-color:#8B1954;	/*ボタン背景色*/
+ 	border: 1px solid #A170C2; /* 枠線 */
+}
+
+textarea,input {
+    border: 2px solid #2C121F;
+	margin: 1px;
+	padding: 1px;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 10px;
+	line-height: 165%;
+
+}
+
+
+/*画面幅800px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*画面幅480px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:480px){
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body {
+	font-size: 1.0em;	/*文字サイズ*/
+	line-height: 1.5;	/*行間*/
+}
+
+.inner {
+	width: 90%;
+}
+
+img {
+	display: block;
+	width: 100%;	/*画像を横幅いっぱいに表示*/
+	height: auto;
+}
+
+/*拡大画像のリンクをスマホで非表示*/
+#pcimg {
+	display:none;
+}
+
+/*顔アップ画像（スマホのみ）*/
+#zoomimg {
+	display:block;
+	width:100%;
+	height:auto;
+}
+
+.t{
+	width:80%;
+}
+
+.td{
+	width:90%;
+	padding:15px 0;
+	margin:10px auto;
+}
+
+#lb{
+	width:auto;
+	margin:auto;
+}
+#lb table{
+	width:95%;
+	font-size:0.9em;
+	margin:auto;
+}
+
+.smallimg {
+	height:65px;
+	width:auto;
+	display:block;
+	margin:0 auto;	
+}
+
+
+}
